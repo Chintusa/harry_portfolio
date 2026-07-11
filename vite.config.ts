@@ -14,11 +14,13 @@ const emitSourcemaps = process.env.EMIT_SOURCEMAPS === 'true'
 
 // Vite config — https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : '/',
+  base: "/harry_portfolio/",
+
   build: {
     sourcemap: emitSourcemaps ? 'inline' : false,
     minify: !emitSourcemaps,
   },
+
   plugins: [
     react(),
     tailwindcss(),
@@ -27,22 +29,6 @@ export default defineConfig({
     figmaReactRefreshBoundaryFallback(),
     figmaMakeKitPlugin({ storiesGlob: '/src/**/*.stories.{ts,tsx,js,jsx}' }),
   ],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
-  },
-  server: {
-    host: '0.0.0.0',
-    port: parseInt(process.env.PORT || '8443'),
-    strictPort: true,
-    hmr: isFigmaSandbox ? { clientPort: 443 } : undefined,
-    watch: { ignored: ['**/.figma/**'] },
-  },
-  preview: {
-    host: '0.0.0.0',
-    port: parseInt(process.env.PORT || '8443'),
-  },
 })
 
 type FigmaSiteConfiguration = {
