@@ -14,7 +14,7 @@ const emitSourcemaps = process.env.EMIT_SOURCEMAPS === 'true'
 
 // Vite config — https://vitejs.dev/config/
 export default defineConfig({
-  base: "/harry_portfolio/",
+ base: process.env.GITHUB_ACTIONS ? "/harry_portfolio/" : "/",
 
   build: {
     sourcemap: emitSourcemaps ? 'inline' : false,
