@@ -25,6 +25,12 @@ import img20 from "../img/JES07456.jpg.jpeg";
 import img21 from "../img/JES07548.jpg.jpeg";
 import img22 from "../img/JES07560.jpg.jpeg";
 
+import img23 from "../img/IMG_3970.jpg";
+import img24 from "../img/IMG_8719.JPG.jpeg";
+import img25 from "../img/IMG_7376.JPG.jpeg";
+import img26 from "../img/IMG_3979.jpg";
+
+
 const CATEGORIES = [
   'All',
   // 'Headshots',
@@ -183,7 +189,31 @@ const PHOTOS = [
     url: img22,
     cat: "Calisthenics",
     label: "Athletic Movement"
-  }
+  },
+   {
+    id: 23,
+    url: img23,
+    cat: "Performance",
+    label: "Dance Performance"
+  },
+   {
+    id: 24,
+    url: img24,
+    cat: "Performance",
+    label: "Live Stage Performance"
+  },
+   {
+    id: 25,
+    url: img25,
+     cat: "Lifestyle",
+  label: "Frozen Trails"
+  },
+   {
+    id: 26,
+    url: img26,
+    cat: "Performance",
+    label: "Crowd & Stage Presence"
+  },
 
 ];
 

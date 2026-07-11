@@ -29,13 +29,46 @@ export default function Footer() {
             letterSpacing: '0.06em',
           }}>HR</div>
           <div>
-            <div style={{ fontSize: 13, color: 'var(--foreground)', fontWeight: 600 }}>Harish Bhoi</div>
+            <div style={{ fontSize: 13, color: 'var(--foreground)', fontWeight: 600 }}>Harry</div>
             <div style={{ fontSize: 10, color: 'var(--muted-foreground)', letterSpacing: '0.12em' }}>Model · Actor · Creator</div>
           </div>
         </div>
 
         <div style={{ fontSize: 11, color: 'var(--muted-foreground)', letterSpacing: '0.06em', textAlign: 'center' }}>
-          © 2026 Harish Bhoi. All Rights Reserved.
+           © 2026 Harry. All Rights Reserved.
+           <div>
+    Crafted by{" "}
+
+    <motion.a
+
+      href="https://www.codenpixels.in/"
+
+      target="_blank"
+
+      rel="noopener noreferrer"
+
+
+      whileHover={{
+        color: 'var(--primary)'
+      }}
+
+
+      style={{
+        color: 'var(--primary)',
+        textDecoration: 'none',
+        fontWeight: 800,
+        letterSpacing: '0.12em',
+        textTransform: 'uppercase',
+        transition: 'color 0.2s'
+      }}
+
+    >
+
+      Codenpixels
+
+    </motion.a>
+
+  </div>
         </div>
 
         <div style={{ display: 'flex', gap: 24 }}>

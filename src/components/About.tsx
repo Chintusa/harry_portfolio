@@ -100,7 +100,7 @@ export default function About() {
                 letterSpacing: '0.02em',
               }}
             >
-              Harish Bhoi
+              Harry
             </motion.div>
 
             {INFO_ROWS.map((r, i) => (
@@ -190,7 +190,7 @@ export default function About() {
 
               <img
                 src={editorial}
-                alt="Harish Bhoi editorial"
+                alt="Harry editorial"
 
                 style={{
                   width: '100%',

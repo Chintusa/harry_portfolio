@@ -3,7 +3,7 @@ import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
 import poster from "../img/IMG_6458.jpeg";
 
 const STATS = [
-  { label: 'Age', value: '22 Years' },
+  { label: 'Age', value: '24 Years' },
   {label: 'DOB', value: '9th Jan 2002'},
   { label: 'Height', value: "5'9\" (175 cm)" },
   { label: 'Weight', value: '63 kg' },
@@ -120,13 +120,13 @@ export default function Hero() {
               transition={{ delay: 0.25, duration: 1, ease: [0.16, 1, 0.3, 1] }}
               style={{ fontFamily: 'var(--font-display)', margin: '0 0 16px', lineHeight: 0.88, fontWeight: 900 }}
             >
-              <span style={{ fontSize: 'clamp(56px, 9vw, 104px)', color: 'var(--foreground)', display: 'block', letterSpacing: '-0.02em' }}>HARISH</span>
+              <span style={{ fontSize: 'clamp(56px, 9vw, 104px)', color: 'var(--foreground)', display: 'block', letterSpacing: '-0.02em' }}>HARRY</span>
               <span style={{
                 fontSize: 'clamp(56px, 9vw, 104px)', display: 'block', letterSpacing: '-0.02em',
                 background: 'linear-gradient(135deg, #C9A84C 0%, #F0D080 40%, #C9A84C 100%)',
                 WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
                 filter: 'drop-shadow(0 0 40px rgba(201,168,76,0.25))',
-              }}>BHOI</span>
+              }}></span>
             </motion.h1>
 
             <motion.div
