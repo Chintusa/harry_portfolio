@@ -1,0 +1,10 @@
+{
+  "description": "Showcase your design portfolio with a fully responsive, interactive webpage featuring stunning visuals, smooth animations, and 3D elements to attract top industry recruiters.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
