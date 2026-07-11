@@ -183,7 +183,7 @@ export default function Hero() {
                 {
                   label: '✉',
                   title: 'Email',
-                  url: 'mailto:hary@gmail.com'
+                  url: 'mailto:Harishbhoi658@gmail.com'
                 },
 
               ].map((s) => (
