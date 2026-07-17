@@ -87,7 +87,29 @@ export default function Contact() {
                   {c.icon}
                 </span>
                 <div>
-                  <div style={{ fontSize: 13, color: 'var(--foreground)', fontWeight: 500 }}>{c.label}</div>
+                  {/* <div style={{ fontSize: 13, color: 'var(--foreground)', fontWeight: 500 }}>{c.label}</div> */}
+                  <div
+  style={{
+    fontSize: 13,
+    fontWeight: 500
+  }}
+>
+  {c.url ? (
+    <a
+      href={c.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        color: 'var(--foreground)',
+        textDecoration: 'none',
+      }}
+    >
+      {c.label}
+    </a>
+  ) : (
+    c.label
+  )}
+</div>
                   <div style={{ fontSize: 10, color: 'var(--muted-foreground)', marginTop: 3, letterSpacing: '0.1em' }}>{c.note}</div>
                 </div>
               </motion.div>
