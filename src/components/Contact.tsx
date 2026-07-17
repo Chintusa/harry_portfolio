@@ -5,10 +5,30 @@ import { useForm, ValidationError } from '@formspree/react'
 import SectionDivider from './SectionDivider'
 
 const CONTACT_ITEMS = [
-  { icon: '📞', label: '+91-93374 86633', note: 'WhatsApp Available' },
-  { icon: '✉', label: 'Harishbhoi658@gmail.com', note: 'Email' },
-  { icon: '📷', label: '@haryy_official_', note: 'Instagram' },
-  { icon: '📍', label: 'Jharsuguda, Odisha, India', note: 'Location' },
+  {
+    icon: '📞',
+    label: '+91-93374 86633',
+    note: 'WhatsApp Available',
+    url: 'tel:+919337486633',
+  },
+  {
+    icon: '✉',
+    label: 'Harishbhoi658@gmail.com',
+    note: 'Email',
+    url: 'mailto:Harishbhoi658@gmail.com',
+  },
+  {
+    icon: '📷',
+    label: '@haryy_official_',
+    note: 'Instagram',
+    url: 'https://www.instagram.com/haryy_official_/',
+  },
+  {
+    icon: '📍',
+    label: 'Jharsuguda, Odisha, India',
+    note: 'Location',
+    url: 'https://maps.google.com/?q=Jharsuguda,Odisha,India',
+  },
 ]
 
 export default function Contact() {
@@ -88,17 +108,17 @@ export default function Contact() {
                 </span>
                 <div>
                   {/* <div style={{ fontSize: 13, color: 'var(--foreground)', fontWeight: 500 }}>{c.label}</div> */}
-                  <div
+          <div
   style={{
     fontSize: 13,
-    fontWeight: 500
+    fontWeight: 500,
   }}
 >
   {c.url ? (
     <a
       href={c.url}
-      target="_blank"
-      rel="noopener noreferrer"
+      target={c.url.startsWith('http') ? '_blank' : undefined}
+      rel={c.url.startsWith('http') ? 'noopener noreferrer' : undefined}
       style={{
         color: 'var(--foreground)',
         textDecoration: 'none',
